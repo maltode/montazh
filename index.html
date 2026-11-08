@@ -121,31 +121,43 @@ dialog::backdrop { background: var(--backdrop); }
   <div class="wrap">
     <p class="eyebrow">Егор · монтаж видео</p>
     <h1>Монтаж Reels, Shorts и роликов для YouTube</h1>
-    <p class="lead">Разговорные ролики экспертов, нарезки из эфиров и подкастов, длинные видео с анимацией. Расшифровку, субтитры и обложки делаю с помощью нейросетей.</p>
+    <p class="lead">Разговорные ролики экспертов, нарезки из эфиров и подкастов, юмор с мемами, ролики с ИИ-кадрами, длинные видео с анимацией. Расшифровку, субтитры и обложки делаю с помощью нейросетей.</p>
     <div class="actions">
       <a class="btn" href="https://t.me/axtoya"><svg class="i" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>Написать в Telegram</a>
       <a class="ghost" href="#raboty"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>Смотреть работы</a>
     </div>
     <ul class="facts">
-      <li>7 работ</li>
-      <li>от 25 секунд до 22 минут</li>
+      <li>10 работ</li>
+      <li>от 8 секунд до 22 минут</li>
       <li>русский и английский</li>
-      <li>психология, история, бизнес</li>
+      <li>психология, история, бизнес, интерьеры, бары</li>
     </ul>
   </div>
 </header>
 
 <main class="wrap" id="raboty">
   <div class="bar" role="group" aria-label="Какие работы показать">
-    <button class="chip" type="button" data-show="all" aria-pressed="true">Все<span>7</span></button>
-    <button class="chip" type="button" data-show="v" aria-pressed="false">Вертикальные<span>5</span></button>
-    <button class="chip" type="button" data-show="h" aria-pressed="false">Длинные<span>2</span></button>
+    <button class="chip" type="button" data-show="all" aria-pressed="true">Все<span>10</span></button>
+    <button class="chip" type="button" data-show="v" aria-pressed="false">Вертикальные<span>7</span></button>
+    <button class="chip" type="button" data-show="h" aria-pressed="false">Горизонтальные<span>3</span></button>
   </div>
 
   <section class="group" data-group="v">
     <h2>Вертикальные: Reels и Shorts</h2>
     <p class="note">Нажмите на обложку, ролик откроется здесь же.</p>
     <div class="grid v">
+      <a class="card" href="media/reels-lounge.mp4" data-file="media/reels-lounge.mp4" data-shape="v">
+        <span class="frame"><img src="media/reels-lounge.jpg" width="540" height="960" alt="Кадр: ведущая с микрофоном, титр «Кем нужно работать, чтобы курить кальян в 15:00?»"><span class="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><span class="dur">1:00</span></span>
+        <span class="kind">Reels · юмор</span>
+        <span class="title">Опрос гостей лаунж-бара</span>
+        <span class="desc">Мемы на стоп-кадрах, плашки над героями, поиск в телефоне, звуки и запиканный мат.</span>
+      </a>
+      <a class="card" href="media/komnata-dekor.mp4" data-file="media/komnata-dekor.mp4" data-shape="v">
+        <span class="frame"><img src="media/komnata-dekor.jpg" width="540" height="960" alt="Кадр: гостиная с картиной, торшером и подушками на диване"><span class="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><span class="dur">0:08</span></span>
+        <span class="kind">Reels · интерьер</span>
+        <span class="title">Комната наполняется декором</span>
+        <span class="desc">Нейросеть убрала декор с фото, предметы появляются по одному, загорается свет, наезд камеры.</span>
+      </a>
       <a class="card" href="https://www.youtube.com/shorts/rbsK3h9jqTY" data-yt="rbsK3h9jqTY" data-shape="v">
         <span class="frame"><img src="media/shorts-psiholog.jpg" width="540" height="960" alt="Обложка: Почему ребёнок взрывается дома"><span class="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span></span>
         <span class="kind">Shorts · 1 200 просмотров</span>
@@ -180,9 +192,15 @@ dialog::backdrop { background: var(--backdrop); }
   </section>
 
   <section class="group" data-group="h">
-    <h2>Длинные ролики для YouTube</h2>
-    <p class="note">Ролики выложены на YouTube и открываются здесь же.</p>
+    <h2>Горизонтальные ролики</h2>
+    <p class="note">Нажмите на обложку, ролик откроется здесь же.</p>
     <div class="grid h">
+      <a class="card" href="media/akademiya-papa.mp4" data-file="media/akademiya-papa.mp4" data-shape="h">
+        <span class="frame"><img src="media/akademiya-papa.jpg" width="960" height="540" alt="Кадр: психолог говорит в камеру, внизу золотая фраза «Можно придумать массу отговорок»" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><span class="dur">3:11</span></span>
+        <span class="kind">Ролик эксперта</span>
+        <span class="title">Мотивирующий ролик об онлайн-академии</span>
+        <span class="desc">Золотые фразы под речь, 3D-предметы, ИИ-кадры историй, «рентген» головы, приближения, финальная заставка.</span>
+      </a>
       <a class="card" href="https://www.youtube.com/watch?v=RtS_htVgrOM" data-yt="RtS_htVgrOM" data-shape="h">
         <span class="frame"><img src="media/holod.jpg" width="960" height="540" alt="Обложка: What Keeping Food Cold Cost Americans in 1900" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><span class="dur">12:04</span></span>
         <span class="kind">Документальный · английский</span>
